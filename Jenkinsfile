@@ -26,7 +26,7 @@ pipeline {
             }
         }
 
-
+    }
     post {
         always {
             echo "pipline has been run"
