@@ -18,12 +18,6 @@ pipeline {
             }
         }
 
-        stage('Install Playwright Dependencies') {
-            steps {
-                // Install Playwright (if not done in the pipeline or system setup)
-                sh 'npx playwright install' // You may need to run this on the first time
-            }
-        }
 
         stage('Run Playwright Tests') {
             steps {
@@ -43,6 +37,13 @@ pipeline {
     post {
         always {
             echo "pipline has been run"
+        }
+
+        success {
+            echo "Docker image pushed successfully!"
+        }
+        failure {
+            echo "Pipeline failed!"
         }
     }
 }
