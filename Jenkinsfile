@@ -5,7 +5,7 @@ pipeline {
     tools {
         // Define the Maven tool you installed on Jenkins
        jdk 'open-jdk 17' 
-       maven 'Maven'
+       maven 'maven'
         
     }
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository
-              git branch: 'master', changelog: false, poll: false, url: 'https://github.com/appneural-meenakshirawat/my-springboot-app.git'
+            //  git branch: 'master', changelog: false, poll: false, url: 'https://github.com/appneural-meenakshirawat/my-springboot-app.git'
             }
         }
 
