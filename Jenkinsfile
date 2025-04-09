@@ -26,13 +26,6 @@ pipeline {
             }
         }
 
-        stage('Publish Results') {
-            steps {
-                // Archive the test results (Optional)
-                junit '**/target/test-*.xml'
-            }
-        }
-    }
 
     post {
         always {
