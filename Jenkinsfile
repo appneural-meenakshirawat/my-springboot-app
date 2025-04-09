@@ -13,6 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository
+                checkout scm
             //  git branch: 'master', changelog: false, poll: false, url: 'https://github.com/appneural-meenakshirawat/my-springboot-app.git'
             }
         }
