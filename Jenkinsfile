@@ -1,14 +1,11 @@
 pipeline {
     agent any
 
-    environment {
-        PLAYWRIGHT_BROWSERS_PATH = "/path/to/playwright/browsers" // Adjust path if necessary
-    }
-
+   
     tools {
         // Define the Maven tool you installed on Jenkins
        jdk 'open-jdk 17' 
-       maven 'Maven-3.6.3'
+       maven 'Maven'
         
     }
 
