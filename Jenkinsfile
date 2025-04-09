@@ -33,7 +33,7 @@ pipeline {
         }
 
         success {
-            echo "Docker image pushed successfully!"
+            echo "playwright test has been run successfully!"
         }
         failure {
             echo "Pipeline failed!"
